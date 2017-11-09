@@ -5,11 +5,11 @@ from unroll_params import unroll_params
 
 def checkNNCost(lambd):
 
-    input_layer_size  = 3;
-    hidden_layer_size = 5;
-    num_labels = 3;
-    m          = 5;
-    layers     = [3, 5, 3]
+    input_layer_size  = 3
+    hidden_layer_size = 5
+    num_labels = 3
+    m = 5
+    layers = [3, 5, 3]
     
     Theta = [] 
     Theta.append(debugInitializeWeights(hidden_layer_size, input_layer_size))
