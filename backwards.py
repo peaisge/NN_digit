@@ -25,17 +25,13 @@ def backwards(nn_weights, layers, X, y, num_labels, lambd):
     # You need to return the following variables correctly 
     Theta_grad = [np.zeros(w.shape) for w in Theta]
 
-    # ================================ TODO ================================
     # The vector y passed into the function is a vector of labels
-    # containing values from 1..K. You need to map this vector into a 
-    # binary vector of 1's and 0's to be used with the neural network
-    # cost function.
+    # containing values from 1..K.
     yv = np.zeros((num_labels, m))
     for i in range(m):
         yv[y[i]][i] = 1
 
-    # ================================ TODO ================================
-    # In this point implement the backpropagation algorithm
+    # Implementation of the backpropagation algorithm
     
     for i in range(m):
                
