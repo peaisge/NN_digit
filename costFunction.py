@@ -20,11 +20,8 @@ def costFunction(nn_weights, layers, X, y, num_labels, lambd):
     # Unroll Params
     Theta = roll_params(nn_weights, layers)
     
-    # You need to return the following variables correctly 
     J = 0;
     
-    # The vector y passed into the function is a vector of labels
-    # containing values from 1..K.
     yv = np.zeros((num_labels, m))
     for i in range(m):
         yv[y[i]][i] = 1
