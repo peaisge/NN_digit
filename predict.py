@@ -9,8 +9,6 @@ def predict(Theta, X):
     m = X.shape[0]
     num_layers = len(Theta) + 1
 
-    # ================================ TODO ================================
-    # You need to return the following variables correctly
     p = np.zeros((1, m))
     
     for i in range(m):
