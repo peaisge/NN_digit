@@ -22,11 +22,8 @@ def backwards(nn_weights, layers, X, y, num_labels, lambd):
     # nn_params and need to be converted back into the weight matrices.
     Theta = roll_params(nn_weights, layers)
   
-    # You need to return the following variables correctly 
     Theta_grad = [np.zeros(w.shape) for w in Theta]
 
-    # The vector y passed into the function is a vector of labels
-    # containing values from 1..K.
     yv = np.zeros((num_labels, m))
     for i in range(m):
         yv[y[i]][i] = 1
